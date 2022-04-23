@@ -317,6 +317,8 @@ footer li a:hover{
     text-align: center;
     font-size: 25px;
     font-weight: 800;
+    transform: scale(1.2);
+    transition: transform 2s;
 }
 .infoproducto h5{
     font-family: 'source code pro' , 'Tangerine' , monospace , cursive ;
