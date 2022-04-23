@@ -141,7 +141,6 @@ nav{
     height: 80px;
     transition: transform .9s; 
     transform: scale(1.4);
-    animation-iteration-count: infinite; 
 }
 nav ul{
     float: right;
