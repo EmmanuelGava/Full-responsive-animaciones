@@ -1,0 +1,1180 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&family=Source+Code+Pro:wght@200;300;400&family=Tangerine:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #FFFDF1;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* grid desktop ------------------------------------------------------------------------------------------------- */
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 150px auto 560px 560px 560px 320px ;
+    grid-template-areas: " header header header"
+                          " iframe iframe iframe"
+                          " block1 block1 aside1"
+                          " aside2 block2 block2"
+                          " block3 block3 aside3"
+                          " footer footer footer"
+}
+.aside1{
+    grid-area: aside1;
+}
+.block1{
+    grid-area: block1;
+}
+.aside2{
+    grid-area: aside2;
+}
+.block2{
+    grid-area: block2;
+}.aside3{
+    grid-area: aside3;
+}
+.block3{
+    grid-area: block3;
+}
+.pie-pagina{
+    grid-area: footer;
+}
+.menu{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+.encabezado{
+    grid-area: header;
+    display: flex;
+}
+.banner{
+    grid-area: iframe;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.banner{
+    background: url(../LOOK\ 3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+}
+
+#Arriba {
+    margin: 10px;
+}
+
+/* menu------------------------------------------------------------------------------------------------- */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    background: #FFFDF1;
+}
+
+nav{
+    height: 120px;
+    width: 100%;
+}
+
+.menu-horizontal{   
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.menu-horizontal > li > a{
+    display: block;
+    font-style: unset;
+    font-weight: 900;
+    padding: 0px 16px ;
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+}
+.menu-horizontal > li:hover{
+    background-color: #FFFDF1;
+    border-radius: 40px;
+    box-shadow: 1px 1px 20px 1px rgba(0,0,0,0.5);
+}
+.menu-vertical{
+    position: absolute;
+    display: 	none;
+    list-style: none;
+    width: 110px;
+    background-color: rgba(0, 0, 0, .5);
+    border: 0px;
+    border-radius: 10px 10px 25px 25px;
+    box-shadow: 2px 5px 10px 1px rgba(0,0,0,0.5);
+}
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+.menu-vertical li:hover{
+    background-color: black;
+    border-radius: 5px 5px 20px 20px;
+}
+.menu-vertical li a{
+    display: block;
+    color: beige;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo{
+    height: 80px;
+}
+nav ul{
+    float: right;
+    margin-right: 10px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 40px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: 'source code pro' , 'Tangerine' , monospace , cursive ;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+/* tiendas: ------------------------------------------------------------------------------------------------- */
+
+.bloque-tiendas{
+    display: block;
+    width: 100%;
+    margin: 10px;
+}
+
+.tiendas{
+    background-color: aqua;
+    width: 100%;
+    margin: 0px 5px;
+}
+
+.uni1{
+    background-image: url(../unicenter-local.jpg);
+    background-size: cover;
+}
+.uni2{
+    background-image: url(../unicenter-local2.jpg);
+    background-size: cover;
+}
+.uni3{
+    background-image: url(../unicenter-local3.jpg);
+    background-size: cover;
+}
+.pal1{
+    background-image: url(../palermo-local.jpg);
+    background-size: cover;
+}
+.pal2{
+    background-image: url(../palermo-local2.jpg);
+    background-size: cover;
+}
+.pal3{
+    background-image: url(../palermo-local3.jpg);
+    background-size: cover;
+}
+
+ 
+
+
+/* Home: Footer, subscripcion a newsletter y redes ------------------------------------------------------------------------------------------------- */
+
+
+footer{
+    color: #FFFDF1;
+    background-color: #73726D;
+    font-family: 'source code pro' , 'Tangerine' , monospace;
+    font-weight: 350px;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+.newsletter{
+    width: 30% ;
+    margin-top: 50px ;
+}
+.newsletter h4{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+.newsletter h5{
+    padding-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+}
+.newsletter form{
+    margin-left: 28%;
+    margin-top: 25px;
+}
+.categoriasfooter{
+    margin-top: 70px ;
+    display: block;
+}
+footer li a {
+    text-decoration: none;
+    color: #dad8d1;
+}
+footer li{
+    font-size: 15px;
+    margin: 6px;
+}
+footer li a:hover{
+    border: 10px;
+    color:black ;
+}
+.email input{
+    text-align: center;
+    padding: 1px;
+    width: 220px 150px;
+    height: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.5);
+    border: 0px;
+}
+.redes{
+    margin-top: 50px ;   
+}
+.redes h2{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+.redes h3{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 350;
+}
+.redes img{
+    width: 30px;
+}
+.iconosredes{
+    margin-left: 40%;
+    margin-top: 10px;
+}
+.ir-arriba {
+    color: white;
+
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 20px;
+    float: right;
+}
+.ir-arriba a{
+    transform: rotate(-90deg);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Home: Nav - bloque de productos y descripciones: ------------------------------------------------------------------------------------------------- */
+
+.infoproducto h4{
+    font-family: 'source code pro' , 'Tangerine' , monospace , cursive ;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 800;
+}
+.infoproducto h5{
+    font-family: 'source code pro' , 'Tangerine' , monospace , cursive ;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+.bloqueproducto{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 580px;
+    border: solid 1px #D9D7CE;
+    justify-content: space-around;  
+}
+.infoproducto{
+    width: 100%;
+    height: 560px;
+    font-family: 'source code pro' , 'Tangerine' , monospace , cursive ;
+    font-size: 15px;
+    font-weight: 300;
+}
+.cat-prod{
+    margin: 30px;
+    color: #73726D;
+    text-shadow: 1px 1px 2px #ccc9b8;
+}
+.name-prod{
+    margin-top: 100px;
+    text-shadow: 1px 1px 2px #ccc9b8;
+}
+.descripcion{
+    color:#73726D;
+    margin: 20px;
+    padding: 3px;
+    align-content: center;
+    text-shadow: 1px 1px 2px #ccc9b8;   
+}
+.descripcion p{
+    color: black;
+    text-align: center;
+}
+
+.fotoproducto{
+    display: flex;
+    justify-content:flex-end;
+    margin-left: 0px;  
+}
+.fotoproducto img{
+    max-width: 500px;
+}
+
+/* Home: fin bloque de productos y descripciones: ------------------------------------------------------------------------------------------------- */
+
+
+
+/* Shoes ------------------------------------------------------------------------------------------------- */
+
+
+.grid-container-shoes{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 150px auto auto auto auto auto auto auto ;
+    grid-template-areas: "header header"
+                        "page-sec-titulo page-sec-titulo"
+                        "art1 art2"
+                        "art3 art2"
+                        "art4 art5"
+                        "art4 art6"
+                        "art8 art7"
+                        "art9 art7"
+                        "footer footer"
+}
+
+.encabezado{
+    grid-area: header;
+}
+
+.page-sec-titulo{
+    grid-area: page-sec-titulo;
+}
+
+.art1{
+    background-image: url(../shoes/driver-nutria2.jpg);
+    background-size: cover;
+    grid-area: art1;
+}
+.art2{
+    background-image: url(../shoes/L0095DRA01-1.jpg);
+    background-size: cover;
+    grid-area: art2;
+}
+.art3{
+    background-image: url(../shoes/L0095DRA01.jpg);
+    background-size: cover;
+    grid-area: art3;
+}
+
+.art4{
+    background-image: url(../shoes/sandalia-vian1.jpg);
+    background-size: cover;
+    grid-area: art4;
+}
+.art5{
+    background-image: url(../shoes/V2294BER13-1.jpg);
+    background-size: cover;
+    grid-area: art5;
+}
+.art6{
+    background-image: url(../shoes/V2294BER13.jpg);
+    background-size: cover;
+    grid-area: art6;
+}
+.art7{
+    background-image: url(../shoes/V2297DOR10-1\).jpg);
+    background-size: cover;
+    grid-area: art7;
+}
+.art8{
+    background-image: url(../shoes/V2297DOR10.jpg);
+    background-size: cover;
+    grid-area: art8;
+}
+.art9{
+    background-image: url(../shoes/L0095DRA01.jpg);
+    background-size: cover;
+    grid-area: art9;
+}
+.pie-pagina{
+    grid-area: footer;
+}
+
+.bloque-shoes{
+    height: 500px;
+}
+
+.art-shoes{
+    height: 360px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    background-size: cover;
+    background-position: center center;
+}
+
+.art-shoes-side{
+    height: 450px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+}
+
+
+/* Lookbook: ------------------------------------------------------------------------------------------------- */
+
+.grid-container-lookbook{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "header"
+                      "page-sec-titulo"
+                      "look-1"
+                      "look-2"
+                      "look-3"
+                      "look-4"
+                      "footer"
+}
+
+.looks{
+    text-align: center;
+    font-family:  'Tangerine' , monospace;
+    font-size: 35px;
+    margin: 0px 0px 80px 0px;
+}
+
+.page-sec-titulo h2{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 50px;
+    font-family: 'Bona Nova', serif;
+    color: #73726D;
+    border-top: #73726D solid 1px;
+    padding-top: 100px;
+}
+
+.page-sec-titulo h3{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Bona Nova', serif;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.looks img{
+    width: 90%;
+    height: 90%;
+    border-radius: 30px;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* tiendas: ------------------------------------------------------------------------------------------------- */
+
+.grid-container-tiendas{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 110px 180px 150px 450px 280px 150px 450px 280px auto;
+    grid-template-areas: "header-tiendas header-tiendas header-tiendas"
+                         "page-sec-titulo page-sec-titulo page-sec-titulo"
+                             "palermo palermo palermo"
+                               "uni1 uni2 uni3"
+                           "iframe-uni iframe-uni iframe-uni"
+                            "unicenter unicenter unicenter"
+                               "pal1 pal2 pal3"
+                            "iframe-pal iframe-pal iframe-pal"
+                              "footer footer footer"
+}
+
+.encabezado-tiendas{
+    grid-area: header-tiendas;
+}
+
+.page-sec-titulo{
+    grid-area: page-sec-titulo;
+}
+
+#palermo{
+    grid-area: palermo;
+}
+#unicenter{
+    grid-area: unicenter;
+}
+
+#palermo h3, #unicenter h3{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Bona Nova', serif;
+    padding-top: 50px;
+}
+
+#palermo h3{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Bona Nova', serif;
+}
+.bloque-tiendas{
+    display: flex;
+    height: 500px;
+    margin: 10px;
+}
+
+.tiendas{
+    height: 400px;
+    width: 33.3%;
+    margin: 0px 5px;
+}
+
+#iframe-uni{
+    grid-area: iframe-uni;
+}
+
+#iframe-pal{
+    grid-area: iframe-pal;
+}
+.uni1{
+    background-image: url(../unicenter-local.jpg);
+    background-size: cover;
+    grid-area: uni1;
+}
+.uni2{
+    background-image: url(../unicenter-local2.jpg);
+    background-size: cover;
+    grid-area: uni2;
+}
+.uni3{
+    background-image: url(../unicenter-local3.jpg);
+    background-size: cover;
+    grid-area: uni3;
+}
+.pal1{
+    background-image: url(../palermo-local.jpg);
+    background-size: cover;
+    grid-area: pal1;
+}
+.pal2{
+    background-image: url(../palermo-local2.jpg);
+    background-size: cover;
+    grid-area: pal2;
+}
+.pal3{
+    background-image: url(../palermo-local3.jpg);
+    background-size: cover;
+    grid-area: pal3;
+}
+
+/* la empresa historia ------------------------------------------------------------------------------------------------- */
+
+
+.empresa-titulo{
+    text-align: center;
+    font-family:  'Tangerine' , monospace;
+    font-size: 45px;
+    border-top: #73726D solid 1px;
+    margin-top: 35px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    color: rgb(87, 84, 66);
+}
+
+.empresa-descripcion h2, h4{
+    color: #73726D;
+    font-family:  'Tangerine' , monospace;
+    font-size: 35px;
+    margin-top: 15px;
+
+}
+
+.empresa-descripcion p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align:start;
+}
+
+.empresa-descripcion{
+    width: 80%;
+    margin: auto;
+}
+
+
+/* contacto------------------------------------------------------------------------------------------------ */
+
+
+
+.titulo-newsletter h2{
+    text-align: left;
+    font-family:  'Tangerine' , monospace;
+    font-size: 40px;
+    border-top: #73726D solid 1px;
+    margin-top: 45px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    color: rgb(87, 84, 66);
+}
+
+.titulo-newsletter h3{
+    text-align: left;
+    font-family:  'Tangerine' , monospace;
+    font-size: 30px;
+    margin-top: 20px;
+    padding-bottom: 25px;
+    color: rgb(87, 84, 66);
+}
+
+.form-newsletter{
+    width: 50%;
+    margin: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.form-newsletter label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.form-newsletter input, select, textarea{
+    background-color: rgba(252, 250, 240, 0.861);
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.form-newsletter textarea{
+    width: 350px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.form-newsletter select{
+    width: 270px;
+}
+.form-newsletter input{
+    width: 218px;
+}
+.form--newsletter{
+    width: 200px;
+}
+.datos-newsletter{
+    margin-bottom: 10px;
+}
+
+
+
+
+/* Media mobile------------------------------------------------------------------------------------------------- */
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 858px){
+    nav ul li a{
+        font-size: 14px;
+    }
+    .checkbtn{
+        display: block;
+        color: black;
+        margin-top: 20px;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #FFFDF1 ;
+        top: 120px;
+        left: -100%;
+        text-align: center;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    #check:checked ~ ul{
+        left:0;
+    }
+    .menu-horizontal{   
+        display: inline-block;
+    }
+    .menu-horizontal > li > a{
+        display: block;
+        padding: 15px 20px;
+        text-decoration: none;
+        color: rgb(20, 20, 20);
+        font-family: 'source code pro' , 'Tangerine' , monospace , cursive ;
+    }
+    .menu-horizontal > li:hover{
+        border: 0px;
+        box-shadow: 2px 5px 50px 1px rgba(0,0,0,0.5);
+    }
+    .menu-vertical{
+        position: absolute;
+        display: 	none;
+        list-style: none;
+        width: 160px;
+        background-color: rgba(0, 0, 0, .5);
+        border: 0px;
+        box-shadow: 2px 5px 10px 1px rgba(0,0,0,0.5);
+    }
+    .menu-horizontal li:hover .menu-vertical{
+        display: none;
+    }
+    .menu-vertical li:hover{
+        background-color: black;
+    }
+    .menu-vertical li a{
+        display: block;
+        color: beige;
+        padding: 15px 15px 15px 20px;
+        text-decoration: none;
+    }
+    nav{
+
+        height: 120px;
+        width: 100%;
+
+    }
+/* Grid home mobile------------------------------------------------------------------------------------------------- */
+    .grid-container{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto 350px auto 350px auto 350px auto auto ;
+        grid-template-areas: " header"
+                              " iframe"
+                              " aside1"
+                              " block1"
+                              " aside2"
+                              " block2"
+                              " aside3"
+                              " block3"
+                              "footer"
+  
+    }
+    
+    .video{
+        grid-area: iframe;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    
+    }
+    .aside1{
+        grid-area: aside1;
+    }
+    .block1{
+        grid-area: block1;
+    }
+    .aside2{
+        grid-area: aside2;
+    }
+    .block2{
+        grid-area: block2;
+    }.aside3{
+        grid-area: aside3;
+    }
+    .block3{
+        grid-area: block3;
+    }
+    .pie-pagina{
+        grid-area: footer;
+    }
+    
+    .infoproducto h4{
+        font-family: 'source code pro' , 'Tangerine' , monospace , cursive ;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 800;
+
+    }
+    .infoproducto h5{
+        font-family: 'source code pro' , 'Tangerine' , monospace , cursive ;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+   
+
+    .infoproducto .cat-prod{
+        margin: 30px;
+        color: #73726D;
+        text-shadow: 1px 1px 2px #ccc9b8;
+    }
+    .name-prod{
+        margin-top: 100px;
+        text-shadow: 1px 1px 2px #ccc9b8;
+    }
+    .descripcion{
+        color:#73726D;
+        margin: 20px;
+        padding: 3px;
+        align-content: center;
+        text-shadow: 1px 1px 2px #ccc9b8;   
+    }
+    .descripcion p{
+        color: black;
+        text-align: center;
+    }
+    .button-prod{
+        margin: 40px 50px 100px 85px;
+        font-family: 'source code pro' , 'Tangerine' , monospace;
+        font-size: 15px;
+        font-weight: 500;
+        border-radius: 15px;
+        padding: 5px;
+        box-shadow: 2px 5px 10px 1px rgba(0,0,0,0.5);
+        border: 0px;
+    }
+/* grid footer mobile------------------------------------------------------------------------------------------------- */
+    #Footer{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 33.3% 33.3% 33.3% ;
+        grid-template-areas: "newsletter newsletter"
+                             "categoriasfooter redes"
+                             "categoriasfooter ir-arriba"
+    }
+    
+    .newsletter{
+        grid-area: newsletter;
+    }
+    .redes{
+        grid-area: redes;
+    }
+    .categoriasfooter{
+        grid-area: categoriasfooter;
+    }
+    .ir-arriba{
+        grid-area: ir-arriba;
+    }
+    
+    footer{
+        color: #FFFDF1;
+        background-color: #73726D;
+        font-family: 'source code pro' , 'Tangerine' , monospace;
+        font-weight: 350px;
+    }
+    #Footer .newsletter{
+        width: 100%;
+        margin-top: 50px ;
+    }
+
+    .newsletter h4{
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .newsletter h5{
+        width: 100%;
+        padding-top: 15px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .newsletter form{
+        margin-left: 28%;
+        margin-top: 25px;
+    }
+    .categoriasfooter{
+        margin-top: 70px ;
+        display: block;
+    }
+    footer li a {
+        text-decoration: none;
+        color: #dad8d1;
+    }
+    footer li{
+        font-size: 15px;
+        margin: 6px;
+    }
+    footer li a:hover{
+        border: 10px;
+        color:black ;
+    }
+    .email input{
+        text-align: center;
+        padding: 1px;
+        width: 220px 150px;
+        height: 25px;
+        border-radius: 10px;
+        box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.5);
+        border: 0px;
+    }
+    .redes h2{
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .redes h3{
+        text-align: center;
+        font-size: 18px;
+        font-weight: 350;
+    }
+    .redes img{
+        width: 30px;
+    }
+    .iconosredes{
+        margin-left: 20%;
+        margin-top: 10px;
+    }
+
+
+/* grid shoes mobile------------------------------------------------------------------------------------------------- */
+
+
+
+    .grid-container-shoes{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 150px 80px 350px 350px 350px 350px 350px 350px 350px 350px 350px auto;
+        grid-template-areas: "header"
+                          "page-sec-titulo"
+                             "art1"
+                             "art2"
+                             "art3"
+                             "art4"
+                             "art5"
+                             "art6"
+                             "art7"
+                             "art8"
+                             "art9"
+                            "footer"
+    }
+
+    .encabezado{
+        grid-area: header;
+    }
+    
+    .page-sec-titulo{
+        grid-area: page-sec-titulo;
+    }
+    
+    .art1{
+        background-image: url(../shoes/driver-nutria2.jpg);
+        background-size: cover;
+        grid-area: art1;
+    }
+    .art2{
+        background-image: url(../shoes/L0095DRA01-1.jpg);
+        background-size: cover;
+        grid-area: art2;
+    }
+    .art3{
+        background-image: url(../shoes/L0095DRA01.jpg);
+        background-size: cover;
+        grid-area: art3;
+    }
+    
+    .art4{
+        background-image: url(../shoes/sandalia-vian1.jpg);
+        background-size: cover;
+        grid-area: art4;
+    }
+    .art5{
+        background-image: url(../shoes/V2294BER13-1.jpg);
+        background-size: cover;
+        grid-area: art5;
+    }
+    .art6{
+        background-image: url(../shoes/V2294BER13.jpg);
+        background-size: cover;
+        grid-area: art6;
+    }
+    .art7{
+        background-image: url(../shoes/V2297DOR10-1\).jpg);
+        background-size: cover;
+        grid-area: art7;
+    }
+    .art8{
+        background-image: url(../shoes/V2297DOR10.jpg);
+        background-size: cover;
+        grid-area: art8;
+    }
+    .art9{
+        background-image: url(../shoes/L0095DRA01.jpg);
+        background-size: cover;
+        grid-area: art9;
+    }
+    .pie-pagina{
+        grid-area: footer;
+    }
+
+    .art-shoes{
+        width:90%;
+        display: flex;
+        height: 100%;
+        margin: 15px;
+    }
+    
+    .art-shoes-side{
+        width:90%;
+        height: 100%;
+        display: flex;
+
+    }
+    #titulo-shoes{
+        text-align: start;
+        font-size: 25px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+
+/* lookbook mobile ------------------------------------------------------------------------------------------------- */
+
+    .page-sec-titulo h2{
+        text-align: start;
+        margin-top: 30px;
+        font-size: 50px;
+        font-family: 'Bona Nova', serif;
+        color: #73726D;
+        border-top: #73726D solid 1px;
+        padding-top: 30px;
+    }
+    .page-sec-titulo h3{
+        text-align: start;
+        margin-top: 30px;
+        font-size: 30px;
+        font-family: 'Bona Nova', serif;
+        color: #000000;
+    }
+
+    /* tiendas mobile ------------------------------------------------------------------------------------------------- */
+
+
+    .grid-container-tiendas{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 110px 180px 150px 350px 350px 350px 350px 150px 350px 350px 350px auto;
+        grid-template-areas: "header-tiendas"
+                             "page-sec-titulo"
+                                 "palermo"
+                                   "uni1"
+                                   "uni2"
+                                   "uni3"
+                               "iframe-uni"
+                                "unicenter"
+                                   "pal1"
+                                   "pal2"
+                                   "pal3"
+                                "iframe-pal"
+                                  "footer"
+    }
+
+    .bloque-tiendas{
+        display: block;
+        width: 100%;
+        margin: 10px;
+    }
+    
+    .tiendas{
+        background-color: aqua;
+        width: 100%;
+        margin: 0px 5px;
+    }
+    
+    
+    /* newsletter mobile ------------------------------------------------------------------------------------------------- */
+
+
+    
+
+.form-newsletter{
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.form-newsletter label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.form-newsletter input, select, textarea{
+    background-color: rgba(252, 250, 240, 0.861);
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.form-newsletter textarea{
+    width: 350px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.form-newsletter select{
+    width: 270px;
+}
+.form-newsletter input{
+    width: 218px;
+}
+.form--newsletter{
+    width: 200px;
+}
+.datos-newsletter{
+    margin-bottom: 10px;
+}
+
+
+        
+
+
+    
+}
+
+
+
+
+
+
+
+
+
