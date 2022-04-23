@@ -139,8 +139,10 @@ nav{
 }
 .logo{
     height: 80px;
+    transform: scale(1.4);
+    transition: transform 8s; 
 }
-nav ul{
+nav ul{ 
     float: right;
     margin-right: 10px;
 }
