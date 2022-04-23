@@ -139,8 +139,13 @@ nav{
 }
 .logo{
     height: 80px;
+<<<<<<< HEAD
     transform: scale(1.4);
     transition: transform 8s; 
+=======
+    transition: transform .9s; 
+    transform: scale(1.4);
+>>>>>>> master
 }
 nav ul{ 
     float: right;
